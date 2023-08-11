@@ -1,0 +1,78 @@
+> Container : virtual operating environment, with everything that 
+yours software needs to run, includes libraries, system tools, code
+and runtime
+
+Docker cotainer : includes everything which micro service need 
+to run
+
+> container runs on docker host , which i the run time environment
+
+Kubernetes
+> open-source system for automating deployment , scaling ,
+ and management of 
+containerized application 
+> deploys, manages, and maintains containers 
+> It can restart ot replace failed container
+> Deployment and updates : it can 100 0r 1000 of container 
+  with a single command 
+
+EKS : elatic kubernets service 
+> it runs kubernetes on AWS without needing to install and operate 
+your own kubernetes 
+
+pod : group of one or more container ,with shared storage and network resources, and
+      specifications for how to run the container
+
+EKS is intergrated with other cloud services : 
+ CloudTrail : logging of all user and API activity
+ CloudWatch : Monitorinf an dclontrol plane logs
+ IAM : authentication, auth, and permissions
+
+ AWS installs and operates and maintains the kubernetes control plane 
+
+ > EKS is fully compactible with the kubernetes tools and plugins  
+
+ Creating a EKS cluster 
+ 1 . IAM user(creating a admin level user)
+ 2 . EC2 instance (run all the commands to create our cluster)
+ 3 . eksctl  (eksctl is a simple CLI tool for creating and managing clusters 
+
+
+    > create a eks cluster and configure  the control plane
+     on EKS - Amazon's managed Kubernetes service for EC2)
+    > three worker nodes 
+    > create a deployment > consisting pods and runnings in the pod, 
+    using ngix image for the container
+    >load balancer server to access the application form the outside world, expose
+    the app on ineter 
+4 . kubectl
+
+
+
+> warr sync
+> unit test err
+>coverage warr
+> preti
+
+
+https://865068824416.signin.aws.amazon.com/console
+
+Monica_1
+
+1'hkId1*
+
+
+
+
+AKIAYSSTN4GEKBWMGRU7
+fYCLzwAf69BdYviqv7mZbN5pUND4wAHzvauzw0o7
+
+
+>after installing eksctl 
+>can check in clouformation 
+>EC2 -> all create nodes with the admin wrk station
+
+>coonect to main
+>run eksctl get cluster > check
+>to connect to amazon eks 
+run aws eks update-kubeconfig --name dev-cluster --region us-east-1
