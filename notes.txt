@@ -76,3 +76,12 @@ fYCLzwAf69BdYviqv7mZbN5pUND4wAHzvauzw0o7
 >run eksctl get cluster > check
 >to connect to amazon eks 
 run aws eks update-kubeconfig --name dev-cluster --region us-east-1
+
+aws configure
+AKIA3KH6IPR66MDAVC4I
+Z+UlalcpuBuEPRZuIq5Hs8LboArbukr7RJXGP5uG
+us-east-1
+json
+
+install kubectl
+curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.27.1/2023-04-19/bin/linux/amd64/kubectl
