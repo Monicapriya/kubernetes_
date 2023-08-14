@@ -15,7 +15,7 @@ spec:
         env: dev
     spec:
       containers:
-      - name: node
+      - name: loving_swar
         image: kubernetes/node
         ports:
         - containerPort: 8080

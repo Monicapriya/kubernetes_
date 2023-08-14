@@ -112,19 +112,21 @@ kubectl apply -f ./node-deployment.yaml
 kubectl get deployment
 
 > we can access the application by laod balancer becoz it is the one which exposes the application to the internet
+
+
+curl “(loadbalancer address)”
+You can check on browser by passing the load balancer address
+
 Kubectl get pods
 kubectl get rs
 kubectl get node
-
-Curl “(loadbalancer address)”
-You can check on browser by passing the load balancer address
 
 AKIA3QXMW52ISSXUUDMK
 QDkBamiA8tp7fLeLIst/hIPNb5UkTRw/CM7CkeBQ
 
 
 
-
+a514484f9d4024cdd928c3adc40fab9a-826393509.us-east-1.elb.amazonaws.com
 
 
 
