@@ -49,9 +49,9 @@ EKS is intergrated with other cloud services :
 
 
 
-> warr sync
+> warr snyk
 > unit test err
->coverage warr
+> coverage warr
 > preti
 
 
@@ -61,32 +61,80 @@ Monica_1
 
 1'hkId1*
 
-
-
-
-AKIAYSSTN4GEKBWMGRU7
-fYCLzwAf69BdYviqv7mZbN5pUND4wAHzvauzw0o7
-
-
->after installing eksctl 
->can check in clouformation 
->EC2 -> all create nodes with the admin wrk station
-
->coonect to main
->run eksctl get cluster > check
->to connect to amazon eks 
-run aws eks update-kubeconfig --name dev-cluster --region us-east-1
+Lab : EKS
 
 aws configure
-AKIA3KH6IPR66MDAVC4I
-Z+UlalcpuBuEPRZuIq5Hs8LboArbukr7RJXGP5uG
-us-east-1
-json
+IAM credentials :
+access key : AKIA3KH6IPR66MDAVC4I
+pw : Z+UlalcpuBuEPRZuIq5Hs8LboArbukr7RJXGP5uG
+region : us-east-1
+format : json
 
-install kubectl
+> Install kubectl
+
 curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.27.1/2023-04-19/bin/linux/amd64/kubectl
+chmod +x ./kubectl
+- mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$HOME/bin:$PATH
+kubectl version --short --client
+
+> Install eksctl
+
+curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+sudo mv /tmp/eksctl /usr/bin
+eksctl version
+
+
+> Create Cluster 
+
+>can check in clouformation 
+>EC2 -> all create nodes with the admin wrk station
+eksctl create cluster --name dev --region us-east-1 --nodegroup-name standard-workers --node-type t3.medium --nodes 3 --nodes-min 1 --nodes-max 4 --managed
+
+>connect to main
+eksctl get cluster -> to connect to amazon eks 
+aws eks update-kubeconfig --name dev-cluster --region us-east-1 -> to update
+
+> Install git 
+
+sudo yum install -y git
+git clone https://github.com/ACloudGuru-Resources/Course_EKS-Basics
+Ls
+Go to that repo folder
+Ls
+Cat yaml file
+
+Kubectl apply -f ./node-svc.yaml
+Kubectl get service
 
 kubectl apply -f ./node-deployement.yaml
 kubectl get deployment
+Kubectl get pods
 kubectl get rs
 kubectl get node
+
+Curl “(loadbalancer address)”
+You can check on browser by passing the load balancer address
+
+AKIA3QXMW52ISSXUUDMK
+QDkBamiA8tp7fLeLIst/hIPNb5UkTRw/CM7CkeBQ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
