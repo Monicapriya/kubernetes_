@@ -15,7 +15,7 @@ spec:
         env: dev
     spec:
       containers:
-      - name: kubernetes/node
-        image: kubernetes/node
+      - name: node
+        image: kubernetes/node:v1
         ports:
         - containerPort: 8080
