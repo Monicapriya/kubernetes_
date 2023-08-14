@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: node
-        image: kubernetes/node:v1
+        image: kubernetes/node
         ports:
         - containerPort: 8080
