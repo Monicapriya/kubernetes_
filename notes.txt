@@ -124,6 +124,8 @@ kubectl get node
 AKIA3QXMW52ISSXUUDMK
 QDkBamiA8tp7fLeLIst/hIPNb5UkTRw/CM7CkeBQ
 
+a514484f9d4024cdd928c3adc40fab9a-826393509.us-east-1.elb.amazonaws.com"
+
 
 
 a514484f9d4024cdd928c3adc40fab9a-826393509.us-east-1.elb.amazonaws.com
