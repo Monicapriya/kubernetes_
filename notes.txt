@@ -85,3 +85,8 @@ json
 
 install kubectl
 curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.27.1/2023-04-19/bin/linux/amd64/kubectl
+
+kubectl apply -f ./node-deployement.yaml
+kubectl get deployment
+kubectl get rs
+kubectl get node
